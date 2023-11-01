@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Impostos</title>
+	<link href="projeto1.css" rel="stylesheet">
+</head>
+<body> 
+    <main oninput="outcome()">
+
+        <h2> CALCULO SALARIAL LÍQUIDO SIMPLES</h2><br>
+
+        <p>
+            <div class="desc">
+                <span>SALÁRIO BRUTO</span>
+                <input id="Sal" name="Salario Bruto" type="text" min="0">
+
+
+                <label>VALOR DO SEU DIA</label><br>
+                <input id="VD" name="Valor do dia" type="text"readonly>
+
+                <label>VALOR DA SUA HORA</label><br>
+                <input id="VH" name="Valor da hora" type="text"readonly>
+
+
+                <Label>VALE TRANSPORTE</Label><br>
+                <input id="Vtransp" name="Vale Transporte" type="text"readonly>
+
+                <Label>INSS</Label><br>
+                <input id="INSS" name="INSS" type="text"readonly>
+
+                <label>PENSÃO ALIMENTICIA</label>
+                <input id="PA" name="Palim" type="text" min="0">
+
+                <label>DEPENDENTES</label><br>
+                <input id="nDEP" name="filho" type="number" value="0" min="0"><br>
+
+                <Label>IRRF</Label>
+                <input id="IRRF" name="IRRF" type="text"readonly>
+
+                <Label>TOTAL LIQUIDO</Label>
+                <input id="TL" name="LIQ" type="text"readonly>
+            </div>
+
+            <h3>
+                Os calculos do INSS  e IRRF foram feitos com base no ano de 2022<br>
+                Calculo do valor do dia considerando 30 dias mensais<br>
+                Calculo do valor da hora de trabalho considerado em 220 horas mensais
+                <br>
+            </h3>
+    </main>	
+<script src="projeto1.js"></script> 
+
+</body>
+</html>
